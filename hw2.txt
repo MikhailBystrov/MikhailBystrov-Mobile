@@ -13,5 +13,7 @@ observability of all actions on the phone screen.
 5. What should be improved/changed in existing test code? Why, for what?
 —There should be no absolute paths, because this can cause errors when used on other computers.
 —It is prohibited to use Thread.sleep().
+—There shouldn't be hardcoded values.
 —To make this code maintainability by every new programmer, it should have comments, descriptions and documents
 as much as possible.
+—This is not test because of it check not neither behavior not values e.t.c.
