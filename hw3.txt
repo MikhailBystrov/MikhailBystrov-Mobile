@@ -1,0 +1,14 @@
+1. Rewrite (complete) Driver using “singleton” pattern. Are there any advantages?
+—The singleton pattern garantees the creation and existence of only one driver and wait.
+2. Suggest improvements for .properties reading. What are the purposes?
+—I suggest that one of improvements is to make liquidate the hardcoded values and
+another one makes us to not initialize the biggest part of variables in driver.class.
+3. Add checks of other fields and their titles (Contact Name, Contact phone) in “native” test
+—added
+4. Optional: Add keyboard presence check  in “native” test.
+—added
+5. Which checks would you place in the “web” test?
+—I placed there checks of presence web page's blocks and proper texts
+6. Implement checks for “web” test in code and try to use.
+—done
+

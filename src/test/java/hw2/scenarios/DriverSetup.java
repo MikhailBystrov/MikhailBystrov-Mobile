@@ -1,4 +1,4 @@
-package scenarios;
+package hw2.scenarios;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -11,11 +11,10 @@ import java.net.URL;
  * Created by Mikhail on 28.06.2018
  */
 public class DriverSetup {
-    protected AndroidDriver driver;
+    AndroidDriver driver;
 
     /**
      * Set of capabilities to test Android native app
-     * @throws MalformedURLException
      */
     protected void prepareAndroidNative() throws MalformedURLException { // exception required by java.net.URL
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -39,7 +38,6 @@ public class DriverSetup {
 
     /**
      * Set of capabilities to test Android web app
-     * @throws MalformedURLException
      */
     protected void prepareAndroidWeb() throws MalformedURLException { // exception required by java.net.URL
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -61,9 +59,8 @@ public class DriverSetup {
 
      /**
      * Set of capabilities to test Android native app with real physical device
-     * @throws MalformedURLException
      */
-    protected void prepareAndroidNativePhys() throws MalformedURLException { // exception required by java.net.URL
+     void prepareAndroidNativePhys() throws MalformedURLException { // exception required by java.net.URL
         DesiredCapabilities capabilities = new DesiredCapabilities();
         // mandatory capabilities
         capabilities.setCapability("deviceName", "c21b9a8d7d94");
@@ -85,7 +82,6 @@ public class DriverSetup {
 
     /**
      * Set of capabilities to test Android web app with real physical device
-     * @throws MalformedURLException
      */
     protected void prepareAndroidWebPhys() throws MalformedURLException { // exception required by java.net.URL
         DesiredCapabilities capabilities = new DesiredCapabilities();
